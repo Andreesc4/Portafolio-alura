@@ -9,6 +9,8 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --color-de-letra: #464646;
+   --back-sobre-mi: #EAF2FD;
 }
 
 body {
@@ -64,7 +66,7 @@ https://en.bem.info/methodology/quick-start/*/
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: var(--color-de-letra);
 }
 
 .menu__list{
@@ -81,7 +83,7 @@ https://en.bem.info/methodology/quick-start/*/
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: var(--color-de-letra);
 }
 
 .menu__list__item--activo{
@@ -90,23 +92,120 @@ https://en.bem.info/methodology/quick-start/*/
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: var(--color-de-letra);
 }
 
 .menu__link{
-    color: #464646;
+    color: var(--color-de-letra);
 }
 
 /*Sección Title*/
 
-section.title{
+.title{
+   
+}
 
+.title__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 0.75rem;
+    margin: 2rem 3rem;
+
+}
+
+.title__profile{
+    width: 368px;
+    height: 368px;  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.title__bio{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: var(--color-de-letra);
+    margin: 0;
+}
+
+.title__subsection{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-de-letra);
+    margin: 0;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;   
+    margin: 0;
+}
+
+.title__network__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
 }
 
 /*Sección About*/
 
-section.about{
+.about{
+    background-color: var(--back-sobre-mi);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
+}
 
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;  
+}
+
+.about__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-de-letra);
+    margin: 0;
+}
+
+.about__paragraph{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-de-letra);
+    margin: 0;
 }
 
 /*Sección Hobbies*/
