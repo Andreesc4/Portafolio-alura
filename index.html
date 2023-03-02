@@ -253,22 +253,22 @@
                 <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                 <form class="formcontato__form" name="form">
                     <div class="formcontato__campo">
-                        <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre" required data-tipo="nombre" maxlength="50">
                         <label for="nombre" class="formcontato__label">Nombre</label>
                         <span class="formcontato__error">Por favor, ingrese su nombre.</span>
                       </div>
                       <div class="formcontato__campo">
-                        <input class="formcontato__input" type="email" name="email" id="email" placeholder="E-mail">
+                        <input class="formcontato__input" type="email" name="email" id="email" placeholder="E-mail" required data-tipo="email">
                         <label for="email" class="formcontato__label">E-mail</label>
                         <span class="formcontato__error">Por favor, ingrese un correo electrónico válido.</span>
                       </div>
                       <div class="formcontato__campo">
-                        <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Asunto">
+                        <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Asunto" required data-tipo="asunto">
                         <label for="asunto" class="formcontato__label">Asunto</label>
                         <span class="formcontato__error">Por favor, ingrese un asunto válido.</span>
                       </div>
                       <div class="formcontato__campo">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
                         <label for="mensaje" class="formcontato__label">Mensaje</label>
                         <span class="formcontato__error">Por favor, ingrese un mensaje.</span>
                       </div>

@@ -680,6 +680,10 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .formcontato__label{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 16px;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -701,6 +705,42 @@ https://en.bem.info/methodology/quick-start/*/
     color: #2A7AE4;
     transition: all 100;
 }
+
+.formcontato__campo--invalid{
+    margin-bottom: 0rem;
+}
+
+.formcontato__campo--invalid .formcontato__input{
+    border-bottom: 1px solid #df2525;
+}
+
+.formcontato__campo--invalid .formcontato__label{
+    color: #df2525;
+}
+
+.formcontato__error{
+    display: none;
+}
+
+.formcontato__campo--invalid .formcontato__error{
+    color: #df2525;
+    display: block;
+}
+
+.formcontato__textarea--invalid .formcontato__textarea{
+    border-bottom: 1px solid #df2525;
+}
+
+
+.formcontato__error{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0.15rem;
+}
+
 
 .formcontato__botao{
     font-family: 'Raleway';
