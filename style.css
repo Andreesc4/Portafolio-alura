@@ -111,7 +111,7 @@ https://en.bem.info/methodology/quick-start/*/
 .title__div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0px;
     gap: 0.75rem;
@@ -121,7 +121,8 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__profile{
     width: 368px;
-    height: 368px;  
+    height: auto;  
+    border-radius: 10%;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -639,13 +640,14 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 1rem 0.5rem 0.5rem 1rem;
     gap: 8px;
     width: 80%;
     border: none;
     border-bottom: 2px solid #C8C8C8;
     outline: none;
     border-radius: 0.5rem;
+    font-size: 20px;
     
 }
 
@@ -688,23 +690,30 @@ https://en.bem.info/methodology/quick-start/*/
     top: 1rem;
     left: 1rem;
     color: #A2A2A2;
-
     transition: all 250ms;
 }
 
 .formcontato__input:not(:placeholder-shown) + .formcontato__label, .formcontato__input:focus + .formcontato__label{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     top: 0.1rem;
     color: #2A7AE4;
     transition: all 100;
 }
 
 .formcontato__textarea:not(:placeholder-shown) + .formcontato__label, .formcontato__textarea:focus + .formcontato__label{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     top: 0.1rem;
     color: #2A7AE4;
     transition: all 100;
 }
+.formcontato__input:valid + .formcontato__label {
+    top: 0.1rem;
+    font-size: 0.7rem;
+    color: #A2A2A2;
+    transition: all 100ms;
+  }
+  
+ 
 
 .formcontato__campo--invalid{
     margin-bottom: 0rem;
@@ -787,6 +796,7 @@ https://en.bem.info/methodology/quick-start/*/
     color: #464646;
 }
 
+
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
@@ -835,7 +845,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .title__profile{
     width: 146px;
-    height: 146px;  
+    height: auto;  
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -1015,12 +1025,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     padding: 0;
     gap: 1rem;
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
 }
 .title__profile {
     width: 98px;
-    height: 98px;
-    padding: 1rem;
+    height: auto;
+    padding: 0;
 }
 
 .title__container{
@@ -1101,12 +1111,17 @@ Utiliza las referencias de los breakpoints @media abajo */
     width: 100%;
     height: auto;
 }
+.experience__info{
+    width: auto;
+}
  /*Contacto*/
 
  .formcontato__contacto{
     padding: 0;
  }
-
+ .formcontato__input, .formcontato__textarea {
+    font-size: 16px;
+ }
 
 /*Footer*/
 
