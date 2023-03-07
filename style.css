@@ -61,6 +61,8 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .menu__title{
@@ -78,6 +80,7 @@ https://en.bem.info/methodology/quick-start/*/
     align-items: center;
     padding: 0px;
     gap: 32px;
+    
 }
 
 .menu__list__item{
@@ -87,6 +90,10 @@ https://en.bem.info/methodology/quick-start/*/
     font-size: 16px;
     line-height: 19px;
     color: var(--color-de-letra);
+    transition: .3s;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(1s * var(--i));
 }
 
 .menu__list__item--activo{
@@ -147,6 +154,10 @@ https://en.bem.info/methodology/quick-start/*/
     margin: 0;
 }
 
+.title__bio--active{
+    color: #2A7AE4;
+}
+
 .title__subsection{
     font-family: 'Raleway';
     font-style: normal;
@@ -178,6 +189,17 @@ https://en.bem.info/methodology/quick-start/*/
     font-size: 16px;
     line-height: 19px;
     color: #464646;
+}
+
+.title__corriculum{
+    font-family: 'Raleway';
+    font-style: normal;
+    padding: 12px 28px;
+    background: #2A7AE4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #2a33e4;
+    color: #FFFFFF;
+    letter-spacing: 1px;
 }
 
 /*Sección About*/
@@ -217,6 +239,11 @@ https://en.bem.info/methodology/quick-start/*/
     line-height: 19px;
     color: var(--color-de-letra);
     margin: 0;
+}
+
+.about__firma{
+    width: 189px;
+    height: auto;
 }
 
 /*Sección skills*/
@@ -418,6 +445,10 @@ https://en.bem.info/methodology/quick-start/*/
     background: #FFFFFF;
 }
 
+.academic__colegio{
+    width: 175px;
+}
+
 .academic__courses__item__title{
     font-family: 'Raleway';
     font-style: normal;
@@ -529,6 +560,7 @@ https://en.bem.info/methodology/quick-start/*/
     width: 116px;
     height: 51px;
     border: 1px solid #2A7AE4;
+    
 }
 
 .experiencia__botao--repo{
@@ -538,6 +570,10 @@ https://en.bem.info/methodology/quick-start/*/
     font-size: 16px;
     line-height: 19px;
     color: #2A7AE4;
+}
+
+.experiencia__botao--repo:hover{
+    cursor: pointer;
 }
 
 .experience__demo button{
@@ -560,6 +596,12 @@ https://en.bem.info/methodology/quick-start/*/
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+}
+
+.experience__botao--demo:hover{
+    transition: 1000ms;
+    background-color: #2a33e4;
+    cursor: pointer;
 }
 
 .experiencie__box.dos{
@@ -768,11 +810,13 @@ https://en.bem.info/methodology/quick-start/*/
     background: #2A7AE4;
     border: none;
     color: #FFFFFF;
+    border-radius: 5px;
 }
 
 .formcontato__botao:hover{
     transition: 1000ms;
     background-color: #2a33e4;
+    cursor: pointer;
 }
 /*footeer*/
 
@@ -794,6 +838,21 @@ https://en.bem.info/methodology/quick-start/*/
     line-height: 19px;
     text-align: center;
     color: #464646;
+}
+
+/*ANIMACIONES*/
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 }
 
 
@@ -1051,8 +1110,16 @@ Utiliza las referencias de los breakpoints @media abajo */
     gap: 8px;
 }
 
-.title__network__item{
-
+.title__corriculum{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 12px;
+    padding: 8px 22px;
+    background: #2A7AE4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #2a33e4;
+    color: #FFFFFF;
+    align-items: center;
 }
 
 /*Sección sobre mi*/
@@ -1065,6 +1132,12 @@ Utiliza las referencias de los breakpoints @media abajo */
 .about__title{
     font-size: 22px;
     line-height: 26px;
+}
+
+.about__firma{
+    width: 140px;
+    height: auto;
+
 }
 /*Skills*/
 
